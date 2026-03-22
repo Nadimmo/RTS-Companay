@@ -6,6 +6,8 @@ import ApplicationForm from "../pages/ApplicationForm/ApplicationForm";
 import ContactPage from "../pages/Contact/Contact";
 import OurServices from "../pages/OurServices/OurServices";
 import CheckInfo from "../pages/CheckInfo/CheckInfo";
+import Admin from "../pages/Admin/Admin";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,11 @@ const router = createBrowserRouter([
       {
         path: "/checkInfo",
         element: <CheckInfo/>
+      },
+      {
+        path: "/admin",
+        element: <PrivateRoute><Admin/></PrivateRoute>
+
       }
     ],
   },

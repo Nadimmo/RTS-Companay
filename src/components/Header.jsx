@@ -28,6 +28,11 @@ function Header() {
           Contact
         </NavLink>
       </li>
+      <li>
+        <NavLink to="/admin" className={navLinkClass}>
+          Admin
+        </NavLink>
+      </li>
     </>
   );
 
