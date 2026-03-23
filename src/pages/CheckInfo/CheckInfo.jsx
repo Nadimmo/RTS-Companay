@@ -32,7 +32,7 @@ const CheckInfo = () => {
     setPassword("");
   };
 
-  // ✅ Create document list dynamically
+  // Create document list dynamically
   const documents = activeUser
     ? [
         { label: "LMI Document", path: activeUser.lmiUrl },
@@ -132,7 +132,6 @@ const CheckInfo = () => {
             </div>
 
             {/* PDF Viewer */}
-            {/* Fullscreen PDF Modal Overlay */}
             {selectedFile && (
               <div className="fixed inset-0 bg-slate-900/90 backdrop-blur-sm z-50 p-4 md:p-10 flex flex-col">
                 {" "}
@@ -148,7 +147,7 @@ const CheckInfo = () => {
                 </div>{" "}
                 <div className="flex-grow bg-white rounded-2xl overflow-hidden h-[80vh]">
                   <iframe
-                    src={`${selectedFile}#view=FitH`}
+                    src={selectedFile}
                     className="w-full h-full"
                     title="PDF Preview"
                   />

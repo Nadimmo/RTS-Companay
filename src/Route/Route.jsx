@@ -8,6 +8,7 @@ import OurServices from "../pages/OurServices/OurServices";
 import CheckInfo from "../pages/CheckInfo/CheckInfo";
 import Admin from "../pages/Admin/Admin";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import Dashboard from "./Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -15,32 +16,40 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
-        index: true,   // 👈 instead of path: "/"
+        index: true,
         element: <Home />,
       },
       {
-        path: "/applicationForm",
-        element: <ApplicationForm/>
+        path: "applicationForm",
+        element: <ApplicationForm />,
       },
       {
-        path: "/contact",
-        element: <ContactPage/>
+        path: "contact",
+        element: <ContactPage />,
       },
       {
-        path:"/services",
-        element: <OurServices/>
+        path: "services",
+        element: <OurServices />,
       },
       {
-        path: "/checkInfo",
-        element: <CheckInfo/>
+        path: "checkInfo",
+        element: <CheckInfo />,
       },
+    ],
+  },
+  {
+    path: "/dashboard",
+    element: (
+      <PrivateRoute>
+        <Dashboard />
+      </PrivateRoute>
+    ),
+    children: [
       {
-        path: "/admin",
-        element: <PrivateRoute><Admin/></PrivateRoute>
-
-      }
+        path: "admin", 
+        element: <Admin />,
+      },
     ],
   },
 ]);
-
 export default router;

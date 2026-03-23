@@ -33,6 +33,11 @@ function Header() {
           Admin
         </NavLink>
       </li>
+      <li>
+        <NavLink to="/dashboard/admin" className={navLinkClass}>
+          Dashboard
+        </NavLink>
+      </li>
     </>
   );
 
