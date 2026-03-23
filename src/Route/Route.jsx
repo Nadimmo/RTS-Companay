@@ -9,6 +9,7 @@ import CheckInfo from "../pages/CheckInfo/CheckInfo";
 import Admin from "../pages/Admin/Admin";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Dashboard from "./Dashboard";
+import Edit from "../pages/Edit/Edit";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
         path: "admin", 
         element: <Admin />,
       },
+      {
+        path: "edit",
+        element: <Edit />,
+      }
     ],
   },
 ]);

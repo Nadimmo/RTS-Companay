@@ -57,9 +57,21 @@ const Dashboard = () => {
                 }
               >
                 <FaEdit />
-                Edit
+                Manage Users
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `flex items-center gap-3 p-2 rounded-lg text-white hover:bg-[#F1BA88] transition ${isActive ? "bg-[#F1BA88]" : ""}`
+                }
+              >
+                <FaHome />
+                Home
+              </NavLink>
+            </li>
+            
           </ul>
         </div>
 

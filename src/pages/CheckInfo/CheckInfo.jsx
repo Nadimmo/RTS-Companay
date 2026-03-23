@@ -1,15 +1,17 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import useAxiosPublic from "../../Hooks/useAxiosPublic";
 
 const CheckInfo = () => {
   const [password, setPassword] = useState("");
   const [activeUser, setActiveUser] = useState(null);
   const [selectedFile, setSelectedFile] = useState(null);
   const [userInfo, setUserInfo] = useState([]);
+  const axiosPublic = useAxiosPublic();
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5000/userInfo")
+    axiosPublic
+      .get("/userInfo")
       .then((res) => setUserInfo(res.data))
       .catch((err) => console.error(err));
   }, []);
