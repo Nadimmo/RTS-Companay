@@ -1,7 +1,11 @@
 import React from "react";
 import axios from "axios";
+import useAxiosPublic from "../../Hooks/useAxiosPublic";
 
 const Admin = () => {
+
+  const axiosPublic = useAxiosPublic();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
@@ -55,7 +59,7 @@ const Admin = () => {
       };
 
     //   🔹 Send to backend
-      const res = await axios.post("http://localhost:5000/userInfo", info);
+      const res = await axiosPublic.post("/userInfo", info);
 
       if (res.data) {
         alert("Submitted successfully!");
