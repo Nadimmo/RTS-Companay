@@ -13,15 +13,12 @@ const Admin = () => {
     const password = form.password.value;
     const status = form.status.value;
 
-    const lmiFile = form.lmiFile.files[0];
-    const jobLetterFile = form.jobLetterFile.files[0];
-    const workPermitFile = form.workPermitFile.files[0];
     const applicationFile = form.applicationFile.files[0];
+    const workPermitFile = form.workPermitFile.files[0];
+    const jobLetterFile = form.jobLetterFile.files[0];
+    const lmiFile = form.lmiFile.files[0];
 
-    if (!lmiFile) {
-      alert("Please upload the LMI file");
-      return;
-    }
+    
 
     try {
       // 🔹 helper function for uploading
