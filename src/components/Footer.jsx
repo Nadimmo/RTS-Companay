@@ -64,12 +64,8 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2 text-sm">
             <li>RTS Company Melbourne Australia</li>
-            <li>Phone: +61480832625 (imo)</li>
-            <li>
-              PLC Construction Company Canada
-            </li>
-            <li>Phone: +18254639191 (imo)</li>
-            <li>Email: info@gamil.com</li>
+           
+            <li>Email: australiartscompanymelborne@gmail.com</li>
             <li>Office Hours: Sat - Thu (9:00 AM - 6:00 PM)</li>
           </ul>
         </div>

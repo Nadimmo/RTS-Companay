@@ -3,7 +3,6 @@ import axios from "axios";
 import useAxiosPublic from "../../Hooks/useAxiosPublic";
 
 const Admin = () => {
-
   const axiosPublic = useAxiosPublic();
 
   const handleSubmit = async (e) => {
@@ -34,12 +33,11 @@ const Admin = () => {
 
         const res = await axios.post(
           `https://api.imgbb.com/1/upload?key=ebced42c75e22d67b350b68860e7277c`,
-          formData
+          formData,
         );
 
         return res.data.data.url;
       };
-      
 
       // 🔹 Upload all files
       const lmiUrl = await uploadToImgBB(lmiFile);
@@ -58,7 +56,7 @@ const Admin = () => {
         applicationUrl,
       };
 
-    //   🔹 Send to backend
+      //   🔹 Send to backend
       const res = await axiosPublic.post("/userInfo", info);
 
       if (res.data) {
@@ -69,8 +67,7 @@ const Admin = () => {
       console.error("Error:", error);
       alert("Upload failed!");
     }
-    
-  }
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
@@ -80,23 +77,54 @@ const Admin = () => {
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-5">
-          <input name="name" placeholder="Full Name" required className="input input-bordered w-full" />
-          <input name="password" type="password" placeholder="Password" required className="input input-bordered w-full" />
+          <input
+            name="name"
+            placeholder="Full Name"
+            required
+            className="input input-bordered w-full"
+          />
+          <input
+            name="password"
+            type="password"
+            placeholder="Password"
+            required
+            className="input input-bordered w-full"
+          />
 
           <select name="status" className="select select-bordered w-full">
             <option value="pending">Pending</option>
             <option value="approve">Approve</option>
           </select>
 
-            <label htmlFor="">Upload LMI</label>
-          <input name="lmiFile" type="file" className="file-input w-full" placeholder="LMI File" />
-          <label htmlFor="">Upload Job Letter</label>
-          <input name="jobLetterFile" type="file" className="file-input w-full" placeholder="Job Letter File" />
-            <label htmlFor="">Upload Work Permit</label>
-          <input name="workPermitFile" type="file" className="file-input w-full" placeholder="Work Permit File" />
-            <label htmlFor="">Upload Application</label>
-          <input name="applicationFile" type="file" className="file-input w-full" placeholder="Application File" />
+          {/* 1. Application */}
+          <label>Upload Application</label>
+          <input
+            name="applicationFile"
+            type="file"
+            className="file-input w-full"
+          />
 
+          {/* 2. Work Permit */}
+          <label>Upload Work Permit</label>
+          <input
+            name="workPermitFile"
+            type="file"
+            className="file-input w-full"
+          />
+
+          {/* 3. Job Offer */}
+          <label>Upload Job Letter</label>
+          <input
+            name="jobLetterFile"
+            type="file"
+            className="file-input w-full"
+          />
+
+          {/* 4. LMI */}
+          <label>Upload LMI</label>
+          <input name="lmiFile" type="file" className="file-input w-full" />
+
+          {/* 5. Visa Processing (status already exists) */}
           <button className="btn btn-primary w-full">Submit</button>
         </form>
       </div>
