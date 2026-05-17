@@ -33,7 +33,7 @@ const Dashboard = () => {
       <div className="flex min-h-screen">
         {/* Sidebar */}
         <div
-          className={`bg-[#60B5FF]  p-5 w-64 space-y-4 transition-all duration-300 ${isOpen ? "block" : "hidden"} md:block`}
+          className={`bg-[#2C3B98]  p-5 w-64 space-y-4 transition-all duration-300 ${isOpen ? "block" : "hidden"} md:block`}
         >
           <ul className="space-y-2">
             {/* Admin Route */}

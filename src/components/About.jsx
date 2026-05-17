@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="py-20 bg-base-100">
+    <section className="py-20 bg-[#2C3B98] text-white ">
       <div className="container mx-auto px-6 lg:px-20">
 
         {/* Section Heading */}
@@ -10,7 +10,7 @@ const About = () => {
           <h2 className="text-4xl font-bold mb-4">
             About Our Company
           </h2>
-          <p className="max-w-3xl mx-auto text-gray-600 text-lg">
+          <p className="max-w-3xl mx-auto text-white text-lg">
             We are a certified and government-approved travel and visa processing agency 
             committed to delivering reliable, transparent, and professional services 
             for both individual and corporate clients.
@@ -26,14 +26,14 @@ const About = () => {
               Trusted & Accredited Travel Partner
             </h3>
 
-            <p className="text-gray-600 mb-6">
+            <p className=" mb-6">
               Our agency operates under full authorization from the Bangladesh Government 
               and maintains active memberships with leading national and international 
               travel organizations. With strong global alliances and a growing corporate 
               client base, we ensure smooth and secure travel experiences.
             </p>
 
-            <p className="text-gray-600">
+            <p className="">
               We proudly support international travelers with complete visa assistance, 
               documentation guidance, flight booking, and secure credit card payment options.
             </p>

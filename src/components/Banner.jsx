@@ -13,7 +13,7 @@ function Banner() {
       }}
     >
       {/* Dark Overlay */}
-      <div className="hero-overlay lg:h-125 bg-opacity-60"></div>
+      <div className="hero-overlay  bg-opacity-60 "></div>
 
       {/* Content */}
       <div className="hero-content text-center text-white relative z-10">
@@ -29,7 +29,7 @@ function Banner() {
             Transparent process. Expert guidance. Guaranteed support.
           </p>
 
-          <div className="flex flex-col md:flex-row justify-center gap-4">
+          <div className="flex flex-col md:flex-row justify-center gap-4 pb-10">
             <Link to={"/applicationForm"} className="btn btn-primary px-8">
               Apply Now
             </Link>

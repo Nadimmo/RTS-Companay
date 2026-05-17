@@ -33,11 +33,11 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-[#2C3B98]">
       <div className="container mx-auto px-6 lg:px-20 text-center">
         {/* Section Heading */}
-        <h2 className="text-4xl font-bold mb-4">How It Works</h2>
-        <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+        <h2 className="text-4xl text-white font-bold mb-4">How It Works</h2>
+        <p className="text-white max-w-2xl mx-auto mb-12">
           Our step-by-step visa process ensures transparency and peace of mind for all our clients.
         </p>
 

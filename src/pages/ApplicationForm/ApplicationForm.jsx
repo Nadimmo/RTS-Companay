@@ -27,10 +27,10 @@ const VisaApplicationForm = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-50 min-h-screen">
+    <section className="py-20 bg-[#2C3B98] min-h-screen">
       <div className="container mx-auto px-6 lg:px-20">
-        <h2 className="text-4xl font-bold mb-6 text-center">Visa Application Form</h2>
-        <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+        <h2 className="text-4xl text-white font-bold mb-6 text-center">Visa Application Form</h2>
+        <p className="text-white text-center mb-12 max-w-2xl mx-auto">
           Fill out the form below carefully. Our team will process your application promptly and keep you updated.
         </p>
 

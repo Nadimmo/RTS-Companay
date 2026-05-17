@@ -42,13 +42,13 @@ const Requirements = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-100">
+    <section className="py-20 bg-[#2C3B98]">
       <div className="container mx-auto px-6 lg:px-20 text-center">
         
-        <h2 className="text-4xl font-bold mb-6">
+        <h2 className="text-4xl text-white font-bold mb-6">
           Required Documents for Visa Application
         </h2>
-        <p className="text-gray-600 max-w-3xl mx-auto mb-14">
+        <p className="text-white max-w-3xl mx-auto mb-14">
           To ensure a smooth visa approval process, please prepare the following 
           essential documents before submitting your application.
         </p>

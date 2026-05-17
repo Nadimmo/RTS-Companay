@@ -10,14 +10,14 @@ import {
 
 const ContactPage = () => {
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-50 to-gray-100">
+    <section className="py-24 bg-[#2C3B98]">
       <div className="container mx-auto px-6 lg:px-20">
         {/* Heading */}
-        <div className="text-center mb-16">
+        <div className="text-center text-white mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Get In Touch With Us
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-white max-w-2xl mx-auto">
             Have questions about visa processing? Our team is ready to assist you with professional guidance and reliable support.
           </p>
         </div>
@@ -68,7 +68,7 @@ const ContactPage = () => {
 
             {/* Social Icons */}
             <div>
-              <h3 className="font-semibold text-lg mb-4">Follow Us</h3>
+              <h3 className="font-semibold text-white text-lg mb-4">Follow Us</h3>
               <div className="flex gap-4">
                 <a className="bg-white shadow-md p-3 rounded-full hover:bg-primary hover:text-white transition duration-300 hover: cursor-pointer">
                   <FaFacebookF />

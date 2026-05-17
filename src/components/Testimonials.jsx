@@ -38,12 +38,12 @@ const Testimonials = () => {
       <div className="container mx-auto px-6 lg:px-20 text-center">
         <h2 className="text-4xl font-bold mb-8">What Our Guests Say</h2>
 
-        <div className="relative max-w-3xl mx-auto flex items-center justify-between bg-white p-6 rounded-xl shadow-md">
+        <div className="bg-[#2C3B98] text-white relative max-w-3xl mx-auto flex items-center justify-between  p-6 rounded-xl shadow-md">
 
           {/* Left Arrow */}
           <button
             onClick={prevSlide}
-            className="text-2xl font-bold text-gray-400 hover:text-black transition-colors hover: cursor-pointer"
+            className="text-2xl font-bold text-gray-400 hover:text-white transition-colors hover: cursor-pointer"
           >
             &#10094;
           </button>
@@ -56,10 +56,10 @@ const Testimonials = () => {
               className="w-16 h-16 rounded-full object-cover"
             />
             <div className="text-left">
-              <p className="text-gray-700 mb-2 italic">
+              <p className="mb-2 italic">
                 "{testimonials[current].text}"
               </p>
-              <p className="font-semibold text-gray-900">
+              <p className="font-semibold ">
                 {testimonials[current].name}
               </p>
             </div>
@@ -68,7 +68,7 @@ const Testimonials = () => {
           {/* Right Arrow */}
           <button
             onClick={nextSlide}
-            className="text-2xl font-bold text-gray-400 hover:text-black transition-colors hover: cursor-pointer"
+            className="text-2xl font-bold text-gray-400 hover:text-white transition-colors hover: cursor-pointer"
           >
             &#10095;
           </button>
